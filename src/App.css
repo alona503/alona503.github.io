@@ -1,0 +1,235 @@
+.App {
+}
+body {
+  padding: 0;
+}
+
+.menuStyle {
+  display: flex;
+  justify-content: center;
+}
+
+.navBar {
+  background-color: #9e2a2b;
+  display: flex;
+  color: #f3f3f4;
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 350px;
+  right: 20px;
+  font-size: 20px;
+  background: grey;
+  color: white;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+  z-index: 0.5;
+}
+
+.back-to-top:hover {
+  background: darkgray;
+}
+
+a {
+  padding: 0 10px 0 10px;
+}
+a:link {
+  color: #f3f3f4;
+  background-color: transparent;
+  text-decoration: none;
+  align-self: center;
+}
+
+a:visited {
+  color: #f3f3f4;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f3f3f4;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #f3f3f4;
+  background-color: transparent;
+  text-decoration: none;
+}
+.tabMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.photoSlideSize {
+  height: 890px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  margin: 50px;
+}
+
+.cardOffer {
+  border: 3.5px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 582px;
+  word-break: break-word;
+  padding: 30px;
+}
+
+.cardBtn {
+  width: 50%;
+  align-self: center;
+}
+.purchase {
+  display: inline-block;
+  border-radius: 18px;
+  background-color: #9e2a2b;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.purchase span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.purchase span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+.purchase:hover span {
+  padding-left: 25px;
+}
+
+.purchase:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+.purchase:hover {
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.copyRight {
+  font-size: 15px;
+  background-color: #9e2a2b;
+  color: #f3f3f4;
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  background-color: #9e2a2b;
+  color: #f3f3f4;
+  max-height: 350px;
+}
+.imgContact {
+  height: 100%;
+  position: absolute;
+}
+.textOnImage {
+  font-size: 50px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  text-shadow: 4px 4px 4px #000000;
+  text-align: left;
+}
+.textOnImageBottom {
+  font-size: 50px;
+  position: absolute;
+  bottom: 8px;
+  text-shadow: 4px 4px 4px #000000;
+  right: 0;
+}
+.details {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.formContact {
+  width: 50%;
+  direction: rtl;
+  padding: 15px;
+}
+
+.tips {
+  direction: rtl;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* media queries */
+@media (max-width: 813px) {
+  .contact {
+    display: block;
+  }
+  .formContact {
+    width: 100%;
+  }
+  .details {
+    width: 100%;
+  }
+  .imgContact {
+    height: auto;
+    position: relative;
+  }
+  .textOnImage {
+    font-size: 30px;
+    text-align: center;
+  }
+  .textOnImageBottom {
+    font-size: 35px;
+    text-align: center;
+  }
+  .tabMenu {
+    display: block;
+  }
+  .photoSlideSize {
+    height: 300px;
+  }
+  .cards {
+    display: block;
+  }
+  .cardOffer {
+    margin: 30px;
+  }
+  .navBar {
+    font-size: 15px;
+  }
+}
+
+h1 {
+  color: red;
+}
